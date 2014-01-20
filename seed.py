@@ -1,0 +1,5 @@
+f=open("d:/priya/pri.txt","r")
+print(f.read(10))
+print(f.seek(5,0))
+print(f.read(10))
+#print(str)
