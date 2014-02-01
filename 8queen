@@ -1,0 +1,30 @@
+import sys
+import array
+def main():
+ print("the 8 queen problem")
+ placequeen(0,x)
+print("",end='')
+def placequeen(i,k,x):
+    for i in range(8):
+        x[k]==i
+    if(k==7):
+        placequeen(k,x)
+    elif(k>7):
+        placequeen(k+1,x)
+    print("",end='')
+def show(arr_size,i,j):
+ for i in range (1,x[8]):
+    return 0
+ for j in range(1,i):
+  if(abs(j - k) == abs(arr_size - i) or (arr_size == i)):
+   return 1;
+def queen():
+ for i in range():
+  printf(i + 1)
+  printf(" ")
+ for j in range(8):
+  print(j+1)
+  if(j==[i]):
+    print("Q",end='')
+  elif():
+   print("*",end='')
