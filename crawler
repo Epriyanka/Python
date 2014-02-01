@@ -1,0 +1,14 @@
+import re
+import os
+import sys
+import urllib
+textfile = open('python_1.txt','wt')
+print("Enter the URL you wish to crawl")
+print("http://phocks.org/stumble/creepy/")
+myurl = input("@> ")
+for i in re.findall('''href=["'](.[^"']+)["']''', urllib.urlopen(myurl).read(), re.I):
+        print(i)
+        for j in re.findall('''href=["'](.[^"']+)["']''', urllib.urlopen(i).read(), re.I):
+                print (j)
+                textfile.write(j+'\n')
+textfile.close()
